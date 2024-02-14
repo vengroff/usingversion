@@ -1,5 +1,5 @@
-packageversion
-==============
+usingversion
+============
 
 `packageversion` is a package designed to help
 other packages help their users keep tract of 
