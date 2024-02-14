@@ -14,7 +14,7 @@ class PackageVersionTestCase(unittest.TestCase):
         self.assertTrue(
             (version == self.expected_version)
             or (version == f"{self.expected_version}+"),
-            msg=f"Expected version {self.expected_version} or {self.expected_version}+ but got {version}."
+            msg=f"Expected version {self.expected_version} or {self.expected_version}+ but got {version}.",
         )
 
     def test_testme_version(self):
