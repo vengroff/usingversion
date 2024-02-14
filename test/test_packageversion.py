@@ -1,11 +1,12 @@
 import unittest
+
 import testme
 
 
 class PackageVersionTestCase(unittest.TestCase):
     def setUp(self) -> None:
         """Set up before each test."""
-        self.expected_version = '0.1.0+'
+        self.expected_version = "0.1.0+"
 
     def test_testme_version(self):
         """Test the .version attribute."""
@@ -27,5 +28,5 @@ class PackageVersionTestCase(unittest.TestCase):
             testme.version_x
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

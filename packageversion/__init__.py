@@ -18,17 +18,16 @@ file of the package's top-level Python package::
 
 """
 
-from typing import Any, Callable, Optional
 import importlib.metadata
-from pathlib import Path
 from collections import defaultdict
-
+from pathlib import Path
+from typing import Any, Callable, Optional
 
 __package_versions = defaultdict(lambda: "unknown")
 """
 A dictionary of package versions that have been found and cached.
- 
-This is managed by `__get_package_version` whose existence is hidden behind 
+
+This is managed by `__get_package_version` whose existence is hidden behind
 :py:func:`~getattr_with_version`.
 """
 
