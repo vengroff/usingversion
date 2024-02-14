@@ -6,15 +6,24 @@ import testme
 class PackageVersionTestCase(unittest.TestCase):
     def setUp(self) -> None:
         """Set up before each test."""
-        self.expected_version = "0.1.0+"
+        # Note that this will have to be updated manually
+        # as we update versions in pyproject.toml.
+        self.expected_version = "0.1.0"
+
+    def asserExpectedVersion(self, version: str):
+        self.assertTrue(
+            (version == self.expected_version)
+            or (version == f"{self.expected_version}+"),
+            msg=f"Expected version {self.expected_version} or {self.expected_version}+ but got {version}."
+        )
 
     def test_testme_version(self):
         """Test the .version attribute."""
-        self.assertEqual(self.expected_version, testme.version)  # add assertion here
+        self.asserExpectedVersion(testme.version)  # add assertion here
 
     def test_testme_underscore_version(self):
         """Test the ._version attribute."""
-        self.assertEqual(self.expected_version, testme._version)  # add assertion here
+        self.asserExpectedVersion(testme._version)  # add assertion here
 
     def test_testme_other_attribute(self):
         """Test an attribute that is there naturally to be sure passing through finds it."""
