@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "packageversion"
+version = "0.1.0"
+description = "A package to make it easy for other packages to report their version."
+authors = ["vengroff <vengroff@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+toml = "^0.10.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
