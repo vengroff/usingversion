@@ -50,10 +50,3 @@ jobs:
         run: |
           source $VENV
           pytest
-      - name: Archive test artifacts
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: test_artifacts-${{ matrix.os }}-${{ matrix.python-version }}
-          path: tests/_test_artifacts
-          retention-days: 7
