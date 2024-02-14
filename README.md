@@ -1,5 +1,5 @@
 packageversion
---------------
+==============
 
 `packageversion` is a package designed to help
 other packages help their users keep tract of 
@@ -11,7 +11,7 @@ mind but it works in a more limited way with other
 approaches.
 
 For Package Maintainers
-=======================
+-----------------------
 
 To use `packageversion` in your package, first take
 a dependency on `packageversion`. In Poetry, you would
