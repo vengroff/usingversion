@@ -12,7 +12,7 @@ Versions are based on a two part check:
 Canonical usage of this package is to add the following to the end of the `__init__.py`
 file of the package's top-level Python package::
 
-    from packageversion import getattr_with_version
+    from usingversion import getattr_with_version
 
     __getattr__ = getattr_with_version("packagename", __file__, __name__)
 
@@ -91,7 +91,7 @@ def getattr_with_version(
     Canonical usage in the __init__.py file of the root-level module of
     a package named `packagename` is::
 
-        from packageversion import getattr_with_version
+        from usingversion import getattr_with_version
 
         __getattr__ = getattr_with_version("packagename", __file__, __name__)
 

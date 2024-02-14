@@ -18,7 +18,7 @@ a dependency on `packageversion`. In Poetry, you would
 do this with 
 
 ```shell
-poetry add packageversion
+poetry add usingversion
 ```
 
 In other environments, you might add it to e.g. 
@@ -28,7 +28,7 @@ Now, just
 add the following to the very end of your top-level `__init__.py`:
 
 ```python
-from packageversion import getattr_with_version
+from usingversion import getattr_with_version
 
 __getattr__ = getattr_with_version("mypackage", __file__, __name__)
 ```
