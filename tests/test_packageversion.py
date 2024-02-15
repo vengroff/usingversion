@@ -8,7 +8,7 @@ class PackageVersionTestCase(unittest.TestCase):
         """Set up before each test."""
         # Note that this will have to be updated manually
         # as we update versions in pyproject.toml.
-        self.expected_version = "0.1.0"
+        self.expected_version = "0.1.1"
 
     def asserExpectedVersion(self, version: str):
         self.assertTrue(
