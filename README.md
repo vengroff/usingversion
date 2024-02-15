@@ -1,7 +1,7 @@
 usingversion
 ============
 
-`packageversion` is a package designed to help
+`usingversion` is a package designed to help
 other packages help their users keep tract of 
 what version they are using.
 
