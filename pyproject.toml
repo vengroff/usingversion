@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "usingversion"
-version = "0.1.0"
+version = "0.1.1"
 description = "A package to make it easy for other packages to report their version."
 authors = ["vengroff <vengroff@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.9"
 toml = "^0.10.2"
 
 [tool.poetry.group.test.dependencies]
