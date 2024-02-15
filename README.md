@@ -61,8 +61,8 @@ version will be reported as `"1.2.3+"`.
 For Package Maintainers
 -----------------------
 
-To use `packageversion` in your package, first take
-a dependency on `packageversion`. In Poetry, you would
+To use `usingversion` in your package, first take
+a dependency on `usingversion`. In Poetry, you would
 do this with 
 
 ```shell
@@ -99,7 +99,7 @@ There's really nothing all that exciting to do.
 You might not even know or care that the developer
 of a package you depend on chose to use `usingversion`.
 If a package `somepackage` that you depend on uses
-`packageversion` then you can check the version with
+`usingversion` then you can check the version with
 
 ```python
 import somepackage
