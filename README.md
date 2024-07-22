@@ -1,6 +1,11 @@
 usingversion
 ============
 
+![PyPI](https://img.shields.io/pypi/v/usingversion)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/usingversion)
+![PyPI - Format](https://img.shields.io/pypi/format/usingversion?label=PyPI%20Format)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/usingversion?label=PyPI%20Downloads)
+
 `usingversion` is a package designed to help
 other packages help their users keep tract of 
 what version they are using.
